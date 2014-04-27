@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="universe.js"></script>
+    <script data-main="main" src="require.js"></script>
+    <style>
+        #space {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<canvas id="space" width="800" height="800"></canvas>
+<button onclick="runUniverse(0.05)">UPDATE</button>
+<script>
+    require(['main'],function(m){startUniverse()});
+</script>
+</body>
+</html>
